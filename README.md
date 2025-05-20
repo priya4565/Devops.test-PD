@@ -3,3 +3,5 @@
 #done with create merge commit
 
 #going with squash and merge commit.
+
+#rebase and merge message added.
