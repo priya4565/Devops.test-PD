@@ -5,3 +5,5 @@
 #going with squash and merge commit.
 
 #rebase and merge message added.
+
+#adding new line from vs code.
