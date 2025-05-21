@@ -16,7 +16,7 @@ jobs:
          git config --global user.email "priyadharshinibalakrishnan15@gmail.com"
          git config --global user.name "priya4565"
          # cd Devops.test-PD
-         # git checkout feature-branch
+         git checkout -b feature-branch
          echo "New changes" >> changes.txt
          git add changes.txt
          git commit -m "Add changes"
