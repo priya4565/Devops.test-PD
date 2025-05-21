@@ -17,6 +17,7 @@ on:
         description: 'Environment to run tests against'
         type: string
         required: true
+        default: "default value"
       
 # Jobs - a workflow run is made up of one/more jobs that can run parallel or sequentially.
 jobs:
