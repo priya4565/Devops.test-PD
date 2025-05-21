@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run a one-line script
-        run: echo ${(github.event_type.inputs.environment)}
+        run: echo ${(inputs.environment)}
 
       - name: Run multi-line script
         run: |
