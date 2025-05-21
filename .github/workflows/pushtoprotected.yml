@@ -23,5 +23,5 @@ jobs:
      - name: Push changes
        env:
          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-         run: |
-           git push origin feature-branch
+       run: |
+         git push origin feature-branch
