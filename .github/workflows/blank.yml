@@ -17,4 +17,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       run: |
-          curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user
+        curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user
