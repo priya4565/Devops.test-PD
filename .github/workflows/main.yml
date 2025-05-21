@@ -5,19 +5,19 @@ name: CI
 # Triggers
 on:
   # Triggers workflow when push/pull request happens on main branch
-  # push:
-  #   branches: ["main"]
-  #   # Default branch can be mentioned in the branches on which the workflow has to be triggered.
-  # pull_request:
-  #   branches: ["main"]
+  push:
+    branches: ["main"]
+    # Default branch can be mentioned in the branches on which the workflow has to be triggered.
+  pull_request:
+    branches: ["main"]
 
   workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Environment to run tests against'
-        type: string
-        required: true
-        default: "default value"
+    # inputs:
+    #   environment:
+    #     description: 'Environment to run tests against'
+    #     type: string
+    #     required: true
+    #     default: "default value"
       
 # Jobs - a workflow run is made up of one/more jobs that can run parallel or sequentially.
 jobs:
@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run a one-line script
-        run: echo ${{inputs.environment}}
+        run: echo hello, world!
 
       - name: Run multi-line script
         run: |
