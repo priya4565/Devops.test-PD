@@ -9,7 +9,7 @@ jobs:
 
     steps:
      - name: Checkout repository
-       uses: actions/checkout@v2
+       uses: actions/checkout@v4
 
      - name: Make changes
        run: |
@@ -23,4 +23,4 @@ jobs:
        env:
          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
        run: |
-         git push origin feature-branch
+         git push origin p2p-branch
