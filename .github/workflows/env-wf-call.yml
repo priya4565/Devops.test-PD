@@ -1,0 +1,22 @@
+name: Environment workflow call check-python script exec
+
+on:
+  workflow_call:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    environment: test-env
+
+    steps:
+    - name: Checkout this repository
+      uses: actions/checkout@v2
+
+    - name: Set up python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Run Python script
+      run: |
+        python script.py
