@@ -15,6 +15,6 @@ jobs:
 
     - name: Use Github API with PAT
       env:
-        GITHUB_TOKEN: ${{secrets.GH_PAT}}
+        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       run: |
           curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/user
